@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dennis Ponzio - Blockchain Developer</title>
+  <!-- <link rel="icon" type="image/x-icon" href="assets/img/"> -->
+
+  <meta name="description" content="Sono un programmatore blockchain. Scopri i miei progetti e il mio lavoro nell'ambito della Blockchain e Web3.">
+  <meta name="keywords" content="Dennis Ponzio Portfolio, progetti, programmatore blockchain, sviluppatore web3">
+  <meta name="author" content="Dennis Ponzio">
+  
+  <!-- OG -->
+  <meta property="og:title" content="Dennis Ponzio - Blockchain Developer">
+  <meta property="og:description" content="Sono un programmatore blockchain. Scopri i miei progetti e il mio lavoro nell'ambito della Blockchain e Web3.">
+  <!-- <meta property="og:image" content="assets/img/"> -->
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/134404f92e.js" crossorigin="anonymous"></script>   
+  
+  <!-- Scrollify -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(function() {
+      $.scrollify({
+        section : ".page",
+        scrollSpeed: 200,
+      });
+    });
+  </script>
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('29N9Op-4ev44VGOd_')
+  </script>
+  <script type="text/javascript" src="/assets/js/send_email.js"></script>
+</head>
+<body class="m-0 border-0 bd-example ">
+    <div class="page p-3">
+      <div class="container h-100">
+        <nav id="navbar-example2" class="container navbar fixed-top px-3 mb-3">
+          <a class="navbar-brand nav-bar-text" href="#">DP Portfolio</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link nav-bar-text" href="#scrollspyHeading1">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-bar-text" href="#scrollspyHeading2">LAVORI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-bar-text" href="#scrollspyHeading3">SKILLS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-bar-text" href="#scrollspyHeading4">CONTATTAMI</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="d-flex h-100 align-items-center justify-content-center">
+          <div class="row h-75">
+            <div class="left-home col-12 col-lg-6 pe-lg-5 d-flex flex-column justify-content-center order-3 order-lg-1 text-center">
+              <h1 id="scrollspyHeading1">Chi sono?</h1>
+              <p class="fs-4">
+                Sono Dennis, un giovane appassionato di 20 anni dedicato allo sviluppo blockchain. La mia curiosità e impegno mi 
+                guidano nella scoperta di questo affascinante mondo tecnologico. Sono appassionato di creare soluzioni innovative 
+                e sicure, desideroso di contribuire al futuro della tecnologia decentralizzata. La mia determinazione nel creare 
+                progetti pratici si unisce alla mia continua volontà di imparare e crescere in questo campo.
+              </p>
+            </div>
+            <div class="vertical-line d-none d-lg-block order-2"></div>
+            <div class="right-home col ps-lg-5 d-flex flex-column justify-content-center order-1 order-lg-3 mb-3">
+              <span class="small-title-home">I'm a</span>
+              <span class="big-title-home">BLOCKCHAIN DEVELOPER</span>
+              <div class="col-auto">
+                <button id="cv-button" class="btn btn-primary">Download CV</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="page p-3">
+      <div class="container h-100 d-flex justify-content-center flex-column">
+        <h1 id="scrollspyHeading2" class="text-center mb-4">My Portfolio</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="col-12 col-lg mb-3 card color-card">
+                <img src="./assets/img/auctions.png" class="card-img-top" alt="Auction Platform">
+                <div class="card-body">
+                  <h5 class="card-title">Progetto finale</h5>
+                  <p class="card-text">
+                    Il Progetto Finale Blockchain, è una piattaforma di aste 
+                    specializzata in veicoli elettrici. La piattaforma è sviluppata in Django, 
+                    fa uso di un database principale basato su SQLite3, mentre le aste sono 
+                    gestite in modo efficiente attraverso Redis.
+                  </p>
+                  <a href="https://github.com/lim-haru/final-blockchain-project" class="btn btn-primary" target="_blank">Vai su github</a>                
+                </div>
+              </div>          
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-lg mb-3 card color-card">
+                <img src="./assets/img/ethereum-web3.png" class="card-img-top" alt="Ethereum Web3">
+                <div class="card-body">
+                  <h5 class="card-title">Ethereum Web3</h5>
+                  <p class="card-text">
+                    Ethereum Web3 rappresenta un progetto che introduce una dapp. Attraverso la 
+                    intuitiva dashboard, offre la possibilità di esplorare e sperimentare 
+                    concretamente alcune delle straordinarie funzionalità intrinseche agli 
+                    smart contract ERC-20.
+                  </p>
+                  <a href="https://github.com/lim-haru/ethereum-web3" class="btn btn-primary" target="_blank">Vai su github</a>                
+                </div>
+              </div>          
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-lg mb-3 card color-card">
+                <img src="./assets/img/energy-management.png" class="card-img-top" alt="Energy Management">
+                <div class="card-body">
+                  <h5 class="card-title">Gestione energia</h5>
+                  <p class="card-text">La piattaforma di Gestione dell'Energia offre la possibilità di 
+                    monitorare i rapporti di produzione e consumo energetico. Riceve dati in tempo reale 
+                    sull'energia generata e utilizzata attraverso API, immagazzinandoli su Blockchain in 
+                    transazioni sicure.
+                  </p>
+                  <a href="https://github.com/lim-haru/Energy-consumption-production-management" class="btn btn-primary" target="_blank">Vai su github</a>
+                </div>
+              </div>          
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-lg mb-3 card color-card">
+                <!-- <img src="" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h5 class="card-title">Exchange API</h5>
+                  <p class="card-text">
+                    Exchange-API è un progetto di un exchange che funziona tramite API, sviluppato con 
+                    Django e MongoDB. L'API consente agli utenti di scambiare valute digitali in modo 
+                    sicuro e affidabile.
+                  </p>
+                  <a href="https://github.com/lim-haru/exchange-API" class="btn btn-primary" target="_blank">Vai su github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-black rounded-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-black rounded-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="page p-3">
+      <div class="container h-100 d-flex justify-content-center flex-column">
+        <h1 id="scrollspyHeading3" class="text-center mb-4">My skills</h1>
+        <div class="row justify-content-md-evenly justify-content-center">
+          <img class="col-2 my-2 mx-5 p-2 px-xl-5 py-xl-4 skills" src="./assets/img/python-original.svg" alt="skill-python">
+          <img class="col-2 my-2 mx-5 p-2 px-xl-5 py-xl-4 skills" src="./assets/img/django-plain.svg" alt="skill-django">
+          <img class="col-2 my-2 mx-5 p-2 px-xl-5 py-xl-4 skills" src="./assets/img/bootstrap-original.svg" alt="skill-bootstrap">
+          <img class="col-2 my-2 mx-5 p-2 px-xl-5 py-xl-4 skills" src="./assets/img/css3-original.svg" alt="skill-css">
+          <img class="col-2 my-2 mx-5 p-2 px-xl-5 py-xl-4 skills" src="./assets/img/git-original.svg" alt="skill-git">
+          <img class="col-2 my-2 mx-5 p-2 px-xl-5 py-xl-4 skills" src="./assets/img/github-original.svg" alt="skill-github">
+          <img class="col-2 my-2 mx-5 p-2 px-xl-5 py-xl-4 skills" src="./assets/img/html5-original.svg" alt="skill-html">
+          <img class="col-2 my-2 mx-5 p-2 px-xl-5 py-xl-4 skills" src="./assets/img/redis-original.svg" alt="skill-redis">
+          <img class="col-2 my-2 mx-5 p-2 px-xl-5 py-xl-4 skills" src="./assets/img/solidity-original.svg" alt="skill-solidity">
+          <img class="col-2 my-2 mx-5 p-2 px-xl-5 py-xl-4 skills" src="./assets/img/mongodb-original.svg" alt="skill-mongodb">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="page p-3">
+      <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
+        <h1 id="scrollspyHeading4" class="mb-4">Contattami</h1>
+        <div class="bg-black bg-opacity-10 p-4 rounded-3 w-75">
+          <div class="mb-3">
+            <label for="from_name" class="form-label fw-semibold">Nome</label>
+            <input type="text" class="form-control" name="from_name" id="from_name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email_id" class="form-label fw-semibold">Indirizzo email</label>
+            <input type="email" class="form-control" name="email_id" id="email_id" placeholder="name@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label fw-semibold">Testo</label>
+            <textarea class="form-control"  name="message" id="message" rows="8" required></textarea>
+          </div>
+          <div class="col-auto">
+            <button onclick="SendMail()" id="contact-button" class="btn btn-primary">Invia</button>
+          </div>    
+        </div>
+      </div>
+    </div>
+
+  <div class="social">
+    <ul>
+      <li><a href="https://github.com/lim-haru" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/dennis-ponzio" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+    </ul>  
+  </div>
+</body>
+</html>
