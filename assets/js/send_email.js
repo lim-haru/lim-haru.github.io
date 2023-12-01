@@ -1,5 +1,5 @@
 function SendMail() {
-  const btn = document.getElementById('button');
+  const btn = document.getElementById('contact-button');
   var params = {
     from_name: document.getElementById('from_name').value,
     email_id: document.getElementById('email_id').value,
@@ -8,11 +8,11 @@ function SendMail() {
 
   btn.textContent = 'Invio...';
 
-  emailjs.send("service_xuedyc4", "template_xf8omcr", params).then(() => {
+  emailjs.send("service_xuedyc4f", "template_xf8omcr", params).then(() => {
     btn.textContent = 'Invia Email';
-    alert('Inviata!');
+    alert('Richiesta avvenuta, email inviata!');
   }, (err) => {
     btn.textContent = 'Invia Email';
-    alert(JSON.stringify(err));
+    alert('Errore di sistema: \n' + JSON.stringify(err));
   });
 }
