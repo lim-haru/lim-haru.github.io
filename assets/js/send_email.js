@@ -8,7 +8,7 @@ function SendMail() {
 
   btn.textContent = 'Invio...';
 
-  emailjs.send("service_xuedyc4f", "template_xf8omcr", params).then(() => {
+  emailjs.send("service_xuedyc4", "template_xf8omcr", params).then(() => {
     btn.textContent = 'Invia Email';
     alert('Richiesta avvenuta, email inviata!');
   }, (err) => {
