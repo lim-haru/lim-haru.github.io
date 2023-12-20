@@ -46,7 +46,6 @@
 
 .vertical-line {
   padding: 0;
-  height: 100%;
   border: 2px solid;
   width: 2px;
   color: var(--primary-color);
