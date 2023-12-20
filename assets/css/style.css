@@ -46,3 +46,140 @@ p, span, h5, .page:nth-child(4) h2 {
 .nav-bar-text:active {
   color: #e9e3e9;
 }
+
+
+/* Background */
+.page:nth-child(1) {
+  background-color: #232323;
+}
+.page:nth-child(2) {
+  background-color: #1f1f1f;
+}
+.page:nth-child(3) {
+  background-color: #232323;
+}
+.page:nth-child(4) {
+  background-color: var(--primary-color);
+}
+
+.color-card {
+  background-color: #262626;
+}
+.card-body a, #cv-button {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+#contact-button {
+  background-color: var(--secondary-color);
+  opacity: 0.9;
+  border-color: var(--secondary-color);
+}
+
+
+/* Home */
+.right-home {
+  display: inline-block;
+  animation: slide-left 2.3s ease forwards;
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.left-home {
+  background-color: var(--secondary-color);
+  z-index: 100;
+}
+
+.vertical-line {
+  padding: 0;
+  border: 2px solid;
+  width: 2px;
+  color: var(--primary-color);
+}
+
+/* Home Title */
+.small-title-home {
+  font-size: calc(1.4rem + 1.8vw)!important;
+  font-weight: 700;
+  line-height: normal;
+  color: #494849;
+}
+.big-title-home {
+  font-size: calc(2.4rem + 2.2vw)!important;
+  font-weight: 700;
+  line-height: calc(2.4rem + 2.3vw)!important;
+  color: #ffffff;
+  display: -webkit-inline-box;
+}
+.big-title-home::after {
+  content: " ■";
+  font-size: small;
+  color: var(--primary-color);
+}
+
+
+/* Skills */
+.skills {
+  filter: drop-shadow(0 0 0.75rem rgb(66, 66, 66));
+}
+
+
+/* Social */
+.social ul {
+  position:fixed;
+  bottom: 30px;
+  right: 20px;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction: column;
+}
+
+.social ul li {
+  list-style: none;
+}
+
+.social ul li a {
+  position: relative;
+  width:60px;
+  height:60px;
+  display:block;
+  text-align:center;
+  margin:10px 0;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
+}
+
+.social ul li a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+
+.social ul li a .fab {
+  width: 100%;
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #262626;
+  transition: .5s;
+}
+
+.social ul li:nth-child(1) a:hover .fab {
+  color: #9400ff;
+}
+
+.social ul li:nth-child(2) a:hover .fab {
+  color: #007bb6;
+}
